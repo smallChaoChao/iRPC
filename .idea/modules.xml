@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/iRPC.iml" filepath="$PROJECT_DIR$/.idea/iRPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iRPC-Client/iRPC-Client.iml" filepath="$PROJECT_DIR$/iRPC-Client/iRPC-Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iRPC-Common/iRPC-Common.iml" filepath="$PROJECT_DIR$/iRPC-Common/iRPC-Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iRPC-Registry/iRPC-Registry.iml" filepath="$PROJECT_DIR$/iRPC-Registry/iRPC-Registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iRPC-Server/iRPC-Server.iml" filepath="$PROJECT_DIR$/iRPC-Server/iRPC-Server.iml" />
+    </modules>
+  </component>
+</project>
