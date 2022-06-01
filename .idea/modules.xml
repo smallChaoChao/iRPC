@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/iRPC.iml" filepath="$PROJECT_DIR$/.idea/iRPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iRPC-API/iRPC-API.iml" filepath="$PROJECT_DIR$/iRPC-API/iRPC-API.iml" />
       <module fileurl="file://$PROJECT_DIR$/iRPC-Client/iRPC-Client.iml" filepath="$PROJECT_DIR$/iRPC-Client/iRPC-Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/iRPC-Common/iRPC-Common.iml" filepath="$PROJECT_DIR$/iRPC-Common/iRPC-Common.iml" />
       <module fileurl="file://$PROJECT_DIR$/iRPC-Registry/iRPC-Registry.iml" filepath="$PROJECT_DIR$/iRPC-Registry/iRPC-Registry.iml" />
