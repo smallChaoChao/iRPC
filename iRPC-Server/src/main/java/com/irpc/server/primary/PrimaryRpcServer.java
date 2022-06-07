@@ -24,8 +24,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Slf4j
 public class PrimaryRpcServer implements RpcServer {
     // 端口和IP
-    private static int PORT = 6666;
-    private static String ADDRESS = "192.168.1.21";
+    private static int PORT = 8899;
+    private static String ADDRESS = "192.168.1.158";
 
     // server的运行状态
     private static boolean isRunning = false;
@@ -53,7 +53,7 @@ public class PrimaryRpcServer implements RpcServer {
                 log.info("客户端连接 [{}]", socket.getInetAddress());
 
                 // todo: 具体的执行流程
-                // threadPool.execute();
+                threadPool.execute(new PrimaryRpcRequestHandler(socket));
             }
 
             // 关闭线程池
