@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -13,11 +14,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="iRPC" target="1.5" />
-      <module name="iRPC-Client" target="1.5" />
-      <module name="iRPC-Common" target="1.5" />
-      <module name="iRPC-Registry" target="1.5" />
-      <module name="iRPC-Server" target="1.5" />
+      <module name="iRPC" target="1.8" />
+      <module name="iRPC-Client" target="1.8" />
+      <module name="iRPC-Common" target="1.8" />
+      <module name="iRPC-Registry" target="1.8" />
+      <module name="iRPC-Server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
