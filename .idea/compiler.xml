@@ -16,10 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="iRPC" target="1.8" />
-<<<<<<< HEAD
-=======
       <module name="iRPC-API" target="1.8" />
->>>>>>> dev
       <module name="iRPC-Client" target="1.8" />
       <module name="iRPC-Common" target="1.8" />
       <module name="iRPC-Registry" target="1.8" />
