@@ -7,7 +7,13 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
+<<<<<<< HEAD
 # 将iml文件忽略
 *.iml
 .idea/
 target/
+=======
+*.iml
+.idea/
+target/
+>>>>>>> dev
