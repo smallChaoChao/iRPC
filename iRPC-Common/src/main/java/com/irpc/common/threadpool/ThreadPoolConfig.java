@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Getter
 @Setter
-@Builder
+// @Builder
 @NoArgsConstructor
 public class ThreadPoolConfig {
     /**

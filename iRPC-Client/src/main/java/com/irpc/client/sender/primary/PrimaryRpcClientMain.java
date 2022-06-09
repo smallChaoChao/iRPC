@@ -8,11 +8,11 @@ import com.irpc.api.calculator.CalculatorService;
  *
  */
 public class PrimaryRpcClientMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         PrimaryRpcClient primaryRpcClient = new PrimaryRpcClient();
         RpcClientProxy rpcClientProxy = new RpcClientProxy(primaryRpcClient);
         CalculatorService calculatorService = rpcClientProxy.getProxy(CalculatorService.class);
-        Integer result = calculatorService.add(1, 1);
+        Double result = calculatorService.add(4.0, 4.0);
         System.out.println(result);
     }
 }

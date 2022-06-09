@@ -8,7 +8,8 @@ public interface RpcServer {
     void start();
 
     // 注册服务
-    void register(Class<?> serviceInterface, Class<?> impl);
+    // void register(Class<?> serviceInterface, Class<?> impl);
+    void register(Object impl);
 
     // 服务是否正在运行中
     boolean isRunning();

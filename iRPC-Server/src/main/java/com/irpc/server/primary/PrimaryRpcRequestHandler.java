@@ -33,8 +33,9 @@ public class PrimaryRpcRequestHandler implements Runnable {
 
             // todo: 2. 调用真正的handler方法处理业务 返回结果对象
             Object result = rpcRequestHandler.handle(rpcRequest);
+
             // 打印结果
-            log.info(result.toString());
+            log.info("调用结果: " + result.toString());
 
             // todo: 3. 将结果对象序列化 然后返回结果
             oos.writeObject(new RpcResponse<>(result));

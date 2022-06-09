@@ -1,7 +1,10 @@
 package com.irpc.server.primary;
 
+import com.irpc.common.factory.SingletonFactory;
 import com.irpc.common.threadpool.ThreadPoolFactory;
 import com.irpc.server.RpcServer;
+import com.irpc.server.manager.ServiceManager;
+import com.irpc.server.manager.ServiceManagerImpl;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,10 +35,12 @@ public class PrimaryRpcServer implements RpcServer {
 
     // 线程池和注册中心
     private final ThreadPoolExecutor threadPool;
+    private final ServiceManager serviceManager;
 
     public PrimaryRpcServer() {
         threadPool = ThreadPoolFactory.createThreadPoolIfAbsent("primary_rpc_server_thread_pool");
         // todo: 注册中心提供的注册服务的方法..
+        serviceManager = SingletonFactory.getInstance(ServiceManagerImpl.class);
     }
 
     @Override
@@ -65,8 +70,9 @@ public class PrimaryRpcServer implements RpcServer {
     }
 
     @Override
-    public void register(Class<?> serviceInterface, Class<?> impl) {
+    public void register(Object impl) {
         // todo: 调用注册中心的publishedServer方法发布该服务器的服务到注册中心
+        serviceManager.publishService(impl);
     }
 
     @Override
